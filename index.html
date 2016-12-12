@@ -11,23 +11,30 @@
 			<script type="text/javascript" src="script/test.js"></script>
 	</head>
 	<body>
-		<div id="qunit">			
+		<div id="qunit"></div>
+		<div id="div_test" style="border: 1px solid; padding: 4px; margin-top: 5px;">			
+		
+		<p>테스트</p>
+			<div style="margin-top:5px;">
+				<button type="button" id="btn_test_divide_process">divideProcess Test</button>
+			</div>
+			<div style="margin-top:5px;">
+				<button type="button" id="btn_test_form_check">formCheck Test</button>
+			</div>
+			<div style="margin-top:5px;">
+				<button type="button" id="btn_test_divide">divide Test</button>
+			</div>
+			<div style="margin-top:5px;">			
+				몇번을 수행할지 입력
+				<input type="text" id="compare_count">
+				<button type="button" id="btn_test_auto_divide">/ 연산자와 비교 테스트</button>
+			</div>
 		</div>
-		<div style="margin-top:5px;">
-			<button type="button" id="btn_test_divide_process">divideProcess Test</button>
-		</div>
-		<div style="margin-top:5px;">
-			<button type="button" id="btn_test_form_check">formCheck Test</button>
-		</div>
-		<div style="margin-top:5px;">
-			<button type="button" id="btn_test_divide">divide Test</button>
-		</div>
-		<div style="margin-top:5px;">
-			<input type="text" id="compare_count">
-			<button type="button" id="btn_test_auto_divide">/ 연산자와 비교 테스트</button>
-		</div>
-		<div style="margin-top:30px;">
-			<button type="button" id="excute_division">나눗셈 콘솔 실행</button>
+
+		<div id="div_main" style="   text-align: center;">
+			<div style="margin-top:50px;">
+				<button type="button" id="excute_division">나눗셈 콘솔 실행</button>
+			</div>
 		</div>
 	</body>
 </html>

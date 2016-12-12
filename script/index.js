@@ -1,9 +1,9 @@
 $(document).ready(function(){	
 	btnListener();
-	// 테스트 실행
-	excuteTest();
+	autoExcuteTest();
 });
 
+// 버튼 리스너
 function btnListener() {
 	// 나눗셈 콘솔 리스너
 	$("#excute_division").click( divide );

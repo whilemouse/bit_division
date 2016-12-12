@@ -1,13 +1,16 @@
-function excuteTest() {
+// 자동으로 수행 할 테스트
+function autoExcuteTest() {
 	test("함수가 존재하는지 체크", functionExistCheck);
 }
 
+// function이 존재 하는지 확인
 function functionExistCheck() {
 	ok(typeof divide === "function", "divide 함수 존재");
 	ok(typeof formCheck === "function", "formCheck 함수 존재");
 	ok(typeof divideProcess === "function", "divideProcess 함수 존재");
 }
 
+// divide 함수 테스트
 function testDivide() {
 	var divide_obj = Object;
 	divide_obj = divide();
@@ -22,6 +25,7 @@ function testDivide() {
 	}
 }
 
+// formCheck 함수 테스트
 function testFormCheck() {
 	var form_check_dividend;
 	var form_check_divisor;
@@ -43,6 +47,7 @@ function testFormCheck() {
 	
 }
 
+// DivideProcess 함수 테스트
 function testDivideProcess() {
 	var divide_process_obj = new Object();
 	var test_obj = new Object();
@@ -63,6 +68,7 @@ function testDivideProcess() {
 	}
 }
 
+// divide함수 vs / 연산자를 입력한 횟수만큼 자동 비교하는 테스트
 function testAutoDivide() {
 	var dividend;
 	var divisor;
